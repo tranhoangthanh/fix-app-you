@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFriendVC" customModule="TravelApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="g4e-Ee-hyw" id="src-r7-T5S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJq-jp-PWt">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌻Follow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLo-e5-nSj">
+                            <rect key="frame" x="60" y="14.5" width="294" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="fay-xd-PTr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB9-mK-sZd" customClass="TouchEffectButton" customModule="TravelApp" customModuleProvider="target">
+                            <rect key="frame" x="20" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ObE-fk-ZyH"/>
+                                <constraint firstAttribute="width" constant="30" id="R5f-hp-IUg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal">
+                                <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="btnBackAction:" destination="-1" eventType="touchUpInside" id="TdP-tS-Nwh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCe-5J-Dus" customClass="TouchEffectButton" customModule="TravelApp" customModuleProvider="target">
+                            <rect key="frame" x="364" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="AB9-9T-cOd"/>
+                                <constraint firstAttribute="width" constant="30" id="yYq-1o-2EQ"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="magnifyingglass" catalog="system"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JCe-5J-Dus" secondAttribute="trailing" constant="20" id="6ja-tx-pJG"/>
+                        <constraint firstItem="JCe-5J-Dus" firstAttribute="leading" secondItem="FLo-e5-nSj" secondAttribute="trailing" constant="10" id="JJu-kz-fjx"/>
+                        <constraint firstItem="rB9-mK-sZd" firstAttribute="leading" secondItem="sJq-jp-PWt" secondAttribute="leading" constant="20" id="L8C-gm-ePg"/>
+                        <constraint firstAttribute="height" constant="50" id="QgG-e8-E0b"/>
+                        <constraint firstItem="FLo-e5-nSj" firstAttribute="centerX" secondItem="sJq-jp-PWt" secondAttribute="centerX" id="dYE-Jm-ANq"/>
+                        <constraint firstItem="FLo-e5-nSj" firstAttribute="leading" secondItem="rB9-mK-sZd" secondAttribute="trailing" constant="10" id="dwk-e2-lYT"/>
+                        <constraint firstItem="JCe-5J-Dus" firstAttribute="centerY" secondItem="sJq-jp-PWt" secondAttribute="centerY" id="dzS-Rb-k6Y"/>
+                        <constraint firstItem="rB9-mK-sZd" firstAttribute="centerY" secondItem="sJq-jp-PWt" secondAttribute="centerY" id="eep-TH-o6i"/>
+                        <constraint firstItem="FLo-e5-nSj" firstAttribute="centerY" secondItem="sJq-jp-PWt" secondAttribute="centerY" id="sJ0-GR-HIE"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g4e-Ee-hyw">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sJq-jp-PWt" secondAttribute="trailing" id="67Q-Lk-E7i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g4e-Ee-hyw" secondAttribute="trailing" id="7fe-6Q-awl"/>
+                <constraint firstItem="sJq-jp-PWt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ABT-QK-g4z"/>
+                <constraint firstItem="g4e-Ee-hyw" firstAttribute="top" secondItem="sJq-jp-PWt" secondAttribute="bottom" constant="10" id="Gpt-cu-Ga7"/>
+                <constraint firstItem="sJq-jp-PWt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HP5-Jk-KHh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g4e-Ee-hyw" secondAttribute="bottom" id="ema-9y-Hha"/>
+                <constraint firstItem="g4e-Ee-hyw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pKB-Xw-NQp"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
